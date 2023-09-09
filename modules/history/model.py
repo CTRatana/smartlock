@@ -1,14 +1,14 @@
 from pydantic import BaseModel
 
 
-class SampleListResponse(BaseModel):
+class HistoryListResponse(BaseModel):
     id: int
     name: str
 
 
-class SampleInsertRequest(BaseModel):
+class HistoryInsertRequest(BaseModel):
     name: str
 
 
-class SampleUpdateRequest(BaseModel):
+class HistoryUpdateRequest(BaseModel):
     name: str

@@ -1,14 +1,14 @@
 from pydantic import BaseModel
 
 
-class SampleListResponse(BaseModel):
+class AttendanceListResponse(BaseModel):
     id: int
     name: str
 
 
-class SampleInsertRequest(BaseModel):
+class AttendanceInsertRequest(BaseModel):
     name: str
 
 
-class SampleUpdateRequest(BaseModel):
+class AttendanceUpdateRequest(BaseModel):
     name: str
