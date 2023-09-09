@@ -13,4 +13,4 @@ class User(Base):
     
     cards = relationship("Card", back_populates="user")
     history_entries = relationship("History", back_populates="user")
-    attendants = relationship("Attendant", back_populates="user")
+    attendants = relationship("Attendance", back_populates="user")

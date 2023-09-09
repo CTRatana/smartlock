@@ -3,12 +3,12 @@ from pydantic import BaseModel
 
 class UserListResponse(BaseModel):
     id: int
-    name: str
+    username: str
     email: str
 
 
 class UserInsertRequest(BaseModel):
-    name: str
+    username: str
     email: str
 
 class UserUpdateRequest(BaseModel):
