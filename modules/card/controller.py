@@ -11,7 +11,7 @@ router = APIRouter(
 
 @router.post('')
 def create(item: CardInsertRequest, db: Session = Depends(get_db)):
-    db_item = Card(name=item.name)
+    db_item = Card(card_number=item.card_number, user_id=item.user_id)
     db.add(db_item)
     db.commit()
     return db_item
@@ -32,7 +32,7 @@ def update(item_id: int, item: CardUpdateRequest, db: Session = Depends(get_db))
     old = db.query(Card).filter(Card.id == item_id).first()
     if old is None:
         raise HTTPException(status_code=404, detail='Item not found')
-    old.name = item.name
+    old.card_number = item.card_number
     db.commit()
     return old
 

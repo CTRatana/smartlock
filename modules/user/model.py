@@ -12,4 +12,4 @@ class UserInsertRequest(BaseModel):
     email: str
 
 class UserUpdateRequest(BaseModel):
-    name: str
+    username: str

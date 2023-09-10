@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from modules.history.model import HistoryListResponse
+from modules.history.model import HistoryListResponse, HistoryInsertRequest
 from core.database import get_db
 from modules.history.entity import History
 
@@ -10,8 +10,8 @@ router = APIRouter(
 )
 
 @router.post('')
-def create(db: Session = Depends(get_db)):
-    db_item = History()
+def create(item: HistoryInsertRequest,db: Session = Depends(get_db)):
+    db_item = History(user_id=item.user_id)
     db.add(db_item)
     db.commit()
     return db_item

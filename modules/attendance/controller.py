@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from modules.attendance.model import AttendanceUpdateRequest
+from modules.attendance.model import AttendanceInsertRequest
 from core.database import get_db
 from modules.attendance.entity import Attendance
 
@@ -10,8 +10,8 @@ router = APIRouter(
 )
 
 @router.post('')
-def create(db: Session = Depends(get_db)):
-    db_item = Attendance()
+def create(item:AttendanceInsertRequest,db: Session = Depends(get_db)):
+    db_item = Attendance(user_id=item.user_id)
     db.add(db_item)
     db.commit()
     return db_item

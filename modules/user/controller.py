@@ -39,7 +39,8 @@ def update(item_id: int, item: UserUpdateRequest, db: Session = Depends(get_db))
     old = db.query(User).filter(User.id == item_id).first()
     if old is None:
         raise HTTPException(status_code=404, detail='Item not found')
-    old.name = item.name
+    old.username = item.username
+
     db.commit()
     return old
 

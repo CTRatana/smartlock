@@ -3,12 +3,8 @@ from pydantic import BaseModel
 
 class AttendanceListResponse(BaseModel):
     id: int
-    name: str
+    user_id: int
 
 
 class AttendanceInsertRequest(BaseModel):
-    name: str
-
-
-class AttendanceUpdateRequest(BaseModel):
-    name: str
+    user_id: int
