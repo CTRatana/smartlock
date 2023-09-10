@@ -2,7 +2,7 @@ from sqlalchemy import TIMESTAMP, Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 from datetime import datetime
 
-from core.database import Base
+from database import Base
 
 class Attendance(Base):
     __tablename__ = 'attendance'
