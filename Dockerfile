@@ -8,8 +8,7 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
  
 COPY requirements.txt .
 RUN pip install -r requirements.txt
- 
-# Stage 2
+
 FROM python:3-alpine AS runner
  
 WORKDIR /app
