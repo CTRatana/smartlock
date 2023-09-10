@@ -3,12 +3,12 @@ from pydantic import BaseModel
 
 class CardListResponse(BaseModel):
     id: int
-    name: str
+    card_number: str
 
 
 class CardInsertRequest(BaseModel):
-    name: str
+    cacard_numberrd: str
 
 
 class CardUpdateRequest(BaseModel):
-    name: str
+    card_number: str

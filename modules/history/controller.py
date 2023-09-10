@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from modules.history.model import HistoryInsertRequest, HistoryListResponse, HistoryUpdateRequest
+from modules.history.model import HistoryListResponse
 from core.database import get_db
 from modules.history.entity import History
 
