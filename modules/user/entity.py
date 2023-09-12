@@ -9,8 +9,8 @@ class User(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String(255), nullable=False)
+    card_number = Column(String(16), nullable=True)
     email = Column(String(255), nullable=False, unique=True)
     
-    cards = relationship("Card", back_populates="user")
     history_entries = relationship("History", back_populates="user")
     attendants = relationship("Attendance", back_populates="user")

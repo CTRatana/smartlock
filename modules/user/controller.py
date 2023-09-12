@@ -9,20 +9,13 @@ router = APIRouter(
     tags=['User']
 )
 
-@router.post('')
-def create(item: UserInsertRequest, db: Session = Depends(get_db)):
-    db_item = User(username=item.username, email=item.email)
-    db.add(db_item)
-    db.commit()
-    return db_item
-   
 @router.get('')
 def gets(db: Session =  Depends(get_db)):
     return db.query(User).all()
 
-@router.get('/{item_id}')
-def get(item_id: int, db: Session = Depends(get_db)):
-    item = db.query(User).filter(User.id == item_id).first()
+@router.get('/{card_number}')
+def get(card_number: str, db: Session = Depends(get_db)):
+    item = db.query(User).filter(User.card_number == card_number).first()
     if item is None:
         raise HTTPException(status_code=404, detail='Item not found')
     return item
@@ -33,6 +26,13 @@ def get(item_id: int, db: Session = Depends(get_db)):
     if item is None:
         raise HTTPException(status_code=404, detail='Item not found')
     return item
+
+@router.post('')
+def create(item: UserInsertRequest, db: Session = Depends(get_db)):
+    db_item = User(id=item.id,username=item.username, email=item.email, card_number=item.card_number)
+    db.add(db_item)
+    db.commit()
+    return db_item
 
 @router.put('/{item_id}')
 def update(item_id: int, item: UserUpdateRequest, db: Session = Depends(get_db)):
@@ -40,7 +40,7 @@ def update(item_id: int, item: UserUpdateRequest, db: Session = Depends(get_db))
     if old is None:
         raise HTTPException(status_code=404, detail='Item not found')
     old.username = item.username
-
+    old.card_number = item.card_number
     db.commit()
     return old
 

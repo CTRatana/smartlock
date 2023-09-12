@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b8d6534-ca40-4caf-92e9-501a22a277c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/modules/attendance/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/attendance/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/attendance/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/attendance/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/card/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/card/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/card/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/card/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/history/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/history/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/history/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/history/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources/88e7d561-6b3c-47d6-8a77-732cea8718b9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources/88e7d561-6b3c-47d6-8a77-732cea8718b9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources/88e7d561-6b3c-47d6-8a77-732cea8718b9/storage_v2/_src_/database/ydhmodfa.oFYJew/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources/88e7d561-6b3c-47d6-8a77-732cea8718b9/storage_v2/_src_/database/ydhmodfa.oFYJew/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/card/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/card/controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/card/entity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/card/model.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/user/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/user/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/entity.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,38 +26,38 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2V91G91P4FyZey2lRdNR3EPhwrO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "develop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\PCs\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\PCs\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\PCs\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\PCs\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\PCs\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\PCs\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,6 +68,8 @@
       <updated>1694233385863</updated>
       <workItem from="1694233391003" duration="5195000" />
       <workItem from="1694352270886" duration="449000" />
+      <workItem from="1694529434514" duration="157000" />
+      <workItem from="1694529815244" duration="134000" />
     </task>
     <servers />
   </component>
