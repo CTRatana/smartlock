@@ -1,5 +1,5 @@
-fastapi
+pydantic
+SQLAlchemy
 uvicorn
-sqlalchemy
-
-
+fastapi
+psycopg2-binary
