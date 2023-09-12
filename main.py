@@ -1,9 +1,7 @@
-import sys
 from typing import Union
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from db import Base, engine
-sys.path.append("..")
 
 from modules.user.controller import router as user_router
 from modules.card.controller import router as card_router
