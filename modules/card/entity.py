@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer,ForeignKey, String
 from sqlalchemy.orm import relationship
 
-from database import Base
+from db import Base
 
 class Card(Base):
     __tablename__ = 'card'

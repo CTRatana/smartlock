@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from modules.attendance.model import AttendanceInsertRequest
-from database import get_db
+from db import get_db
 from modules.attendance.entity import Attendance
 
 router = APIRouter(
