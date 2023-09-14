@@ -1,3 +1,4 @@
+import datetime
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from modules.attendance.model import AttendanceInsertRequest
@@ -11,18 +12,20 @@ router = APIRouter(
 
 @router.post('')
 def create(item: AttendanceInsertRequest, db: Session = Depends(get_db)):
+    current_date = datetime.date.today()
+    
     existing_item = db.query(Attendance).filter(
         Attendance.user_id == item.user_id,
-        Attendance.date == item.date
+        Attendance.date == current_date
     ).first()
 
     if existing_item:
         return "Item already exists"
-
-    db_item = Attendance(user_id=item.user_id, date=item.date)
+    
+    db_item = Attendance(user_id=item.user_id, date=current_date)
     db.add(db_item)
     db.commit()
-    
+
     return "S"
    
 @router.get('')

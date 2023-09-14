@@ -12,15 +12,17 @@ router = APIRouter(
 
 @router.post('')
 def create(item: HistoryInsertRequest, db: Session = Depends(get_db)):
+    current_date = datetime.date.today()
+    
     existing_item = db.query(History).filter(
         History.user_id == item.user_id,
-        History.date == item.date
+        History.date == current_date
     ).first()
 
     if existing_item:
         return "Item already exists"
     
-    db_item = History(user_id=item.user_id)
+    db_item = History(user_id=item.user_id, date=current_date)
     db.add(db_item)
     db.commit()
 
