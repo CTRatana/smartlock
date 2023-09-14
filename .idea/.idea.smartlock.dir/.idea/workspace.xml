@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b8d6534-ca40-4caf-92e9-501a22a277c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources/88e7d561-6b3c-47d6-8a77-732cea8718b9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources/88e7d561-6b3c-47d6-8a77-732cea8718b9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources/88e7d561-6b3c-47d6-8a77-732cea8718b9/storage_v2/_src_/database/ydhmodfa.oFYJew/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/dataSources/88e7d561-6b3c-47d6-8a77-732cea8718b9/storage_v2/_src_/database/ydhmodfa.oFYJew/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.smartlock.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/card/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/card/controller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/card/entity.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/card/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/attendance/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/attendance/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/attendance/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/attendance/entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/attendance/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/attendance/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/history/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/history/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/history/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/history/entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/history/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/history/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/user/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/user/entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/entity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/user/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/user/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,30 +35,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\PCs\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\PCs\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\PCs\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\PCs\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\PCs\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\PCs\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,6 +72,8 @@
       <workItem from="1694352270886" duration="449000" />
       <workItem from="1694529434514" duration="157000" />
       <workItem from="1694529815244" duration="134000" />
+      <workItem from="1694666908052" duration="1072000" />
+      <workItem from="1694672067138" duration="2433000" />
     </task>
     <servers />
   </component>
@@ -78,5 +82,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/modules/user/controller.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,14 +2,14 @@ from pydantic import BaseModel
 
 
 class UserListResponse(BaseModel):
-    id: int
+    id: str
     username: str
     email: str
     card_number:str
 
 
 class UserInsertRequest(BaseModel):
-    id: int
+    id: str
     username: str
     email: str
     card_number:str

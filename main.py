@@ -6,7 +6,7 @@ from modules.user.controller import router as user_router
 from modules.history.controller import router as history_router
 from modules.attendance.controller import router as attendance_router
 
-app = FastAPI()
+app = FastAPI(docs_url="/")
 
 app.add_middleware(
     CORSMiddleware,

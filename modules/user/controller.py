@@ -1,3 +1,4 @@
+import uuid
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from modules.user.model import UserInsertRequest, UserUpdateRequest
@@ -13,18 +14,16 @@ router = APIRouter(
 def gets(db: Session =  Depends(get_db)):
     return db.query(User).all()
 
-@router.get('/{card_number}')
+@router.get('/GetByCardNumber/{card_number}')
 def get(card_number: str, db: Session = Depends(get_db)):
     item = db.query(User).filter(User.card_number == card_number).first()
     if item is None:
         raise HTTPException(status_code=404, detail='Item not found')
-    return item
+    return item 
 
-@router.get('/{item_id}')
-def get(item_id: int, db: Session = Depends(get_db)):
+@router.get('/GetById/{item_id}')
+def get(item_id: str, db: Session = Depends(get_db)):
     item = db.query(User).filter(User.id == item_id).first()
-    if item is None:
-        raise HTTPException(status_code=404, detail='Item not found')
     return item
 
 @router.post('')
@@ -35,7 +34,7 @@ def create(item: UserInsertRequest, db: Session = Depends(get_db)):
     return db_item
 
 @router.put('/{item_id}')
-def update(item_id: int, item: UserUpdateRequest, db: Session = Depends(get_db)):
+def update(item_id: str, item: UserUpdateRequest, db: Session = Depends(get_db)):
     old = db.query(User).filter(User.id == item_id).first()
     if old is None:
         raise HTTPException(status_code=404, detail='Item not found')
@@ -45,7 +44,7 @@ def update(item_id: int, item: UserUpdateRequest, db: Session = Depends(get_db))
     return old
 
 @router.delete('/{item_id}')
-def delete(item_id: int, db: Session = Depends(get_db)):
+def delete(item_id: str, db: Session = Depends(get_db)):
     item = db.query(User).filter(User.id == item_id).first()
     if item is None:
         raise HTTPException(status_code=404, detail='Item not found')
