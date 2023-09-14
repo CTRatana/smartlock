@@ -10,19 +10,34 @@ router = APIRouter(
 )
 
 @router.post('')
-def create(item:AttendanceInsertRequest,db: Session = Depends(get_db)):
-    db_item = Attendance(user_id=item.user_id)
+def create(item: AttendanceInsertRequest, db: Session = Depends(get_db)):
+    existing_item = db.query(Attendance).filter(
+        Attendance.user_id == item.user_id,
+        Attendance.date == item.date
+    ).first()
+
+    if existing_item:
+        return "Item already exists"
+
+    db_item = Attendance(user_id=item.user_id, date=item.date)
     db.add(db_item)
     db.commit()
-    return db_item
+    
+    return "S"
    
 @router.get('')
 def gets(db: Session =  Depends(get_db)):
     return db.query(Attendance).all()
 
-@router.get('/{item_id}')
-def get(item_id: int, db: Session = Depends(get_db)):
+@router.get('/GetById/{item_id}')
+def get(item_id: str, db: Session = Depends(get_db)):
     item = db.query(Attendance).filter(Attendance.id == item_id).first()
+    if item is None:
+        raise HTTPException(status_code=404, detail='Item not found')
+    return item
+@router.get('/GetByUserId/{user_id}')
+def get(user_id: str, db: Session = Depends(get_db)):
+    item = db.query(Attendance).filter(Attendance.user_id == user_id).all()
     if item is None:
         raise HTTPException(status_code=404, detail='Item not found')
     return item
