@@ -1,5 +1,4 @@
-from sqlalchemy import TIMESTAMP, Column, Date, DateTime, ForeignKey, Integer, String
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy import Column, Date, ForeignKey, Integer, String
 
 from sqlalchemy.orm import relationship
 from datetime import datetime
@@ -11,6 +10,6 @@ class History(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     date = Column(Date, nullable=False)
-    user_id = Column(UUID, ForeignKey('users.id'))
+    user_id = Column(String, ForeignKey('users.id'))
 
     user = relationship("User", back_populates="history_entries")
