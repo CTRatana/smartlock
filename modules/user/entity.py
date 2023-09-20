@@ -10,7 +10,7 @@ class User(Base):
 
     id = Column(UUID, nullable=False, primary_key=True)
     username = Column(String(255), nullable=False)
-    card_number = Column(String(16), nullable=True, unique=True)
+    card_number = Column(String(16), nullable=True)
     email = Column(String(255), nullable=False, unique=True)
     
     history_entries = relationship("History", back_populates="user")
