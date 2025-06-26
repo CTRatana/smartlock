@@ -5,6 +5,7 @@ from database import Base, engine
 from modules.user.controller import router as user_router
 from modules.history.controller import router as history_router
 from modules.attendance.controller import router as attendance_router
+from modules.smartlock.controller import router as smartlock_router
 
 app = FastAPI(docs_url="/")
 
@@ -19,6 +20,7 @@ app.add_middleware(
 app.include_router(user_router)
 app.include_router(history_router)
 app.include_router(attendance_router)
+app.include_router(smartlock_router)
 
 
 @app.on_event("startup")
