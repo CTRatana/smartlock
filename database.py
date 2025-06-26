@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 
 
-DATABASE_URL = "postgresql://ydhmodfa:cwqT-7fm7vUS452jNp2H54jToJZEjHD8@satao.db.elephantsql.com/ydhmodfa"
+DATABASE_URL = "ppostgresql://postgres:y9Hzs*R_9sMDzc&@db.zboeuhndxturcqekdxjs.supabase.co:5432/postgres"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
